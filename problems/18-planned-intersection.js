@@ -17,7 +17,20 @@ console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 
 function plannedIntersect(firstArr) {
   // Your code here
+  //iterate first array with filter
+  //iterate second array with map
+  return (secondArr) => {
+    return firstArr.filter((ele) => secondArr.includes(ele));
+  }
 }
+
+////Example 1:
+//let abc = plannedIntersect(["a", "b", "c"]); // returns a function
+//console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+//
+////Example 2:
+//let fame = plannedIntersect(["f", "a", "m", "e"]); // returns a function
+//console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 try {
